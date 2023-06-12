@@ -18,7 +18,7 @@ mat init_identity_matrix(int size);
 mat find_inverse(mat a, pll det);
 
 mat get_matrix(){
-    //cin.ignore(numeric_limits <streamsize>::max(), '\n');
+    //cin.ignore(numeric_limits <streamsize>::max(), '\n'); 總之就是清除輸入流，遇到問題可以下一行註解換這行
     cin.sync();
     string s; mat matrix; vector<pll> tmp_v;
     while(getline(cin, s)){
@@ -287,7 +287,7 @@ int main() {
         else if(op == '3') case_3();
         else if(op == '4') case_4();
         else break;
-        //cin.ignore(numeric_limits <streamsize>::max(), '\n');
+        //cin.ignore(numeric_limits <streamsize>::max(), '\n'); 總之就是清除輸入流，遇到問題可以下一行註解換這行
         cin.sync();
         cout << "Press enter to continue...";
         getchar();
